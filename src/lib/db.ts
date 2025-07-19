@@ -38,9 +38,17 @@ import mysql, { PoolConnection } from 'mysql2/promise';
 // Create MySQL Connection Pool
 // It's highly recommended to use environment variables for these credentials
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
+//   host: process.env.DB_HOST || 'localhost',
+//   user: process.env.DB_USER || 'root',
+//   password: process.env.DB_PASSWORD || '',
+//   database: process.env.DB_NAME || 'document_system',
+//   waitForConnections: true, 
+//  connectionLimit: 30,
+//   queueLimit: 0,
+//   charset: 'utf8mb4', // <--- เพิ่มบรรทัดนี้เข้ามา
+  host: process.env.DB_HOST || 'gateway01.us-west-2.prod.aws.tidbcloud.com',
+  user: process.env.DB_USER || '2wmePjWfByh6Xb3.root',
+  password: process.env.DB_PASSWORD || 'cB5f1WA9MZJJTQ4E',
   database: process.env.DB_NAME || 'document_system',
   waitForConnections: true, 
  connectionLimit: 30,
