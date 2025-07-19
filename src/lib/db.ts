@@ -47,6 +47,7 @@ const pool = mysql.createPool({
 //   queueLimit: 0,
 //   charset: 'utf8mb4', // <--- เพิ่มบรรทัดนี้เข้ามา
   host: process.env.DB_HOST || 'gateway01.us-west-2.prod.aws.tidbcloud.com',
+   port: parseInt(process.env.DB_PORT || '4000', 10), // <-- เพิ่มบรรทัดนี้เข้ามา
   user: process.env.DB_USER || '2wmePjWfByh6Xb3.root',
   password: process.env.DB_PASSWORD || 'cB5f1WA9MZJJTQ4E',
   database: process.env.DB_NAME || 'document_system',
