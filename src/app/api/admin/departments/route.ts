@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 import { getConnection } from '@/lib/db'; // ตรวจสอบให้แน่ใจว่า path นี้ถูกต้อง
 import { PoolConnection, ResultSetHeader, RowDataPacket } from 'mysql2/promise';
-export const dynamic = "force-static";
+//export const dynamic = "force-static";
 // --- Interface for type safety ---
 interface DepartmentRow extends RowDataPacket {
   id: number;

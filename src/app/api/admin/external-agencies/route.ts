@@ -3,7 +3,7 @@
 import { NextResponse, NextRequest } from 'next/server';
 import { getConnection } from '@/lib/db';
 import { PoolConnection, ResultSetHeader, RowDataPacket } from 'mysql2/promise';
-export const dynamic = "force-static";
+//export const dynamic = "force-static";
 // Define a type for external agency rows
 interface ExternalAgencyRow extends RowDataPacket {
   id: number;

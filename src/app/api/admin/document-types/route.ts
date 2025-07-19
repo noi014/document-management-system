@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 import { PoolConnection, ResultSetHeader, RowDataPacket } from 'mysql2/promise';
 import { getConnection } from '@/lib/db';
-export const dynamic = "force-static";
+//export const dynamic = "force-static";
 // --- Interface for type safety ---
 interface DocumentTypeRow extends RowDataPacket {
   id: number;
